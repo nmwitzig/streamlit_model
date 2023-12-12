@@ -1,0 +1,8 @@
+streamlit
+pandas
+numpy
+numpyro
+jax
+arviz
+tensorflow_probability
+scipy
