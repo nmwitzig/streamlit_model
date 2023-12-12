@@ -1,7 +1,7 @@
 #%%
-import os
-# change working directory to the root of the project
-os.chdir(os.path.join(os.getcwd(), '..'))
+# import os
+# # change working directory to the root of the project
+# os.chdir(os.path.join(os.getcwd(), '..'))
 
 #%%
 import numpyro
