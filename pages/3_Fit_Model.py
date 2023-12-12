@@ -47,4 +47,5 @@ st.dataframe(az_summary)
 
 st.markdown("### Traceplot")
 az_mcmc = run_mcmc()
-st.pyplot(az.plot_trace(az_mcmc, var_names=['nu_mu'], compact=True, divergences=None))
+trace_plot = az.plot_trace(az_mcmc, var_names=['nu_mu'], compact=True, divergences=None)
+st.pyplot(trace_plot)

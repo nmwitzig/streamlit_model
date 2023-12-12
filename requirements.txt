@@ -6,3 +6,5 @@ jax
 arviz
 tensorflow_probability
 scipy
+graphviz
+seaborn
