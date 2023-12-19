@@ -29,7 +29,7 @@ rng_key = jax.random.PRNGKey(0)
 @st.cache_data
 def run_mcmc():
     nuts_kernel = NUTS(model_main)
-    mcmc = MCMC(nuts_kernel, num_warmup=SAMPLES, num_samples=SAMPLES, num_chains=2, progress_bar=True, chain_method='parallel')
+    mcmc = MCMC(nuts_kernel, num_warmup=SAMPLES, num_samples=SAMPLES, num_chains=1, progress_bar=True, chain_method='parallel')
     mcmc.run(rng_key,x1=x1,x2=x2, y=y, condition_id=condition_id, subject_id=subject_id)
     az_mcmc = az.from_numpyro(mcmc)
     return az_mcmc
