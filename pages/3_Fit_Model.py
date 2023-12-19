@@ -11,7 +11,7 @@ from numpyro.infer import MCMC, NUTS
 import jax
 import streamlit as st
 import arviz as az
-numpyro.set_host_device_count(2)
+numpyro.set_host_device_count(1)
 
 st.title('Fit Model (MCMC)')
 st.sidebar.markdown("# Fit Model (MCMC)")
