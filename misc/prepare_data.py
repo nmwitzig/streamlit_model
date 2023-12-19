@@ -55,6 +55,3 @@ def get_data():
 
 #%%
 
-x1,x2,y,subject_id,condition_id,param_df = get_data()
-
-y.shape
